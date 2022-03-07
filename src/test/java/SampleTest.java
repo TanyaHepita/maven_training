@@ -13,7 +13,7 @@ class SampleTest {
     void fact_of_negative_number_throws() {
         Assertions.assertThatExceptionOfType(IllegalArgumentException.class)
             .isThrownBy(() -> sample.fact(-1))
-            .withMessage("N cannot be negative");
+            .withMessage("N should be positive");
     }
     @Test
     void fact_of_3_is_6() {
